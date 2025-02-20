@@ -1,41 +1,28 @@
-# Whenever a `shopify.app.toml` is generated after you've run `pnpm dev` make sure you update the generated config with the below, of course replace any values in `[]` brackets with the values that are within the actual `shopify.app.toml` file.
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "[client_id]"
-application_url = "https://example.com"
+client_id = "9345240ef8db70dd0bc7a983b6ea88ff"
+application_url = "https://nominations-cleaner-toronto-vsnet.trycloudflare.com"
 embedded = true
-name = "[name]"
-handle = "[handle]"
+name = "BD-challenge-NM"
+handle = "bd-challenge-nm"
+
+[build]
+include_config_on_deploy = true
+automatically_update_urls_on_dev = true
 
 [webhooks]
 api_version = "2025-01"
 
-  [[webhooks.subscriptions]]
-  topics = [ "app/uninstalled" ]
-  uri = "/webhooks/app/uninstalled"
-
-  [[webhooks.subscriptions]]
-  topics = [ "app/scopes_update" ]
-  uri = "/webhooks/app/scopes_update"
-
 [access_scopes]
 # Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
-scopes = "read_customer_events,read_customers,read_metaobject_definitions,read_metaobjects,write_customers,write_metaobject_definitions,write_metaobjects,write_products,read_products"
+scopes = ""
 
 [auth]
 redirect_urls = [
-  "https://example.com/auth/callback",
-  "https://example.com/auth/shopify/callback",
-  "https://example.com/api/auth/callback"
+  "https://nominations-cleaner-toronto-vsnet.trycloudflare.com/auth/callback",
+  "https://nominations-cleaner-toronto-vsnet.trycloudflare.com/auth/shopify/callback",
+  "https://nominations-cleaner-toronto-vsnet.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
 embedded = false
-
-[app_proxy]
-url = "https://example.com/api/public"
-subpath = "reviewer-9000"
-prefix = "apps"
-
-[build]
-dev_store_url = "[dev_store_url]"
-automatically_update_urls_on_dev = true
