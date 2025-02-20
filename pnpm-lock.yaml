@@ -53,6 +53,9 @@ importers:
       react-dom:
         specifier: ^18.2.0
         version: 18.3.1(react@18.3.1)
+      remix:
+        specifier: ^2.15.3
+        version: 2.15.3
       vite-tsconfig-paths:
         specifier: ^5.0.1
         version: 5.1.4(typescript@5.7.3)(vite@5.4.14(@types/node@22.13.4))
@@ -4980,6 +4983,10 @@ packages:
 
   remedial@1.0.8:
     resolution: {integrity: sha512-/62tYiOe6DzS5BqVsNpH/nkGlX45C/Sp6V+NtiN6JQNS1Viay7cWkazmRkrQrdFj2eshDe96SIQNIoMxqhzBOg==}
+
+  remix@2.15.3:
+    resolution: {integrity: sha512-689rXgw2Lob4gHLHCxCqlwLznhpEHb83jdgBuFDMjOmPpYAyusbgyDz5tI5xpkI5ECHbeDZrjeYWQ0xHm2NaHw==}
+    engines: {node: '>=18.0.0'}
 
   remove-trailing-separator@1.1.0:
     resolution: {integrity: sha512-/hS+Y0u3aOfIETiaiirUFwDBDzmXPvO+jAfKTitUngIPzdKc6Z0LoFjM/CK5PL4C+eKwHohlHAb6H0VFfmmUsw==}
@@ -11643,6 +11650,8 @@ snapshots:
       unified: 10.1.2
 
   remedial@1.0.8: {}
+
+  remix@2.15.3: {}
 
   remove-trailing-separator@1.1.0: {}
 
