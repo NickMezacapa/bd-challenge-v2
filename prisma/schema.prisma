@@ -30,3 +30,30 @@ model Session {
   collaborator  Boolean?  @default(false)
   emailVerified Boolean?  @default(false)
 }
+
+model Review {
+  id         String   @id @default(cuid())
+  rating     Int
+  message    String
+  productId  String
+  product    Product  @relation(fields: [productId], references: [id])
+  customerId String
+  customer   Customer @relation(fields: [customerId], references: [id])
+  createdAt  DateTime @default(now())
+}
+
+model Product {
+  id      String   @id @default(cuid())
+  name    String
+  sku     String?
+  price   Float
+  reviews Review[] // Related reviews for this product
+}
+
+model Customer {
+  id        String   @id @default(cuid())
+  firstName String
+  lastName  String
+  email     String   @unique
+  reviews   Review[] // Related reviews by this customer
+}
