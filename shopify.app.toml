@@ -1,10 +1,10 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
-client_id = "9345240ef8db70dd0bc7a983b6ea88ff"
-application_url = "https://nominations-cleaner-toronto-vsnet.trycloudflare.com"
+client_id = "8da9f318c9cb7527c40b73b1c09ede3b"
+application_url = "https://lanes-law-famous-intermediate.trycloudflare.com"
 embedded = true
-name = "BD-challenge-NM"
-handle = "bd-challenge-nm"
+name = "bd-challenge"
+handle = "bd-challenge"
 
 [build]
 include_config_on_deploy = true
@@ -19,9 +19,9 @@ scopes = ""
 
 [auth]
 redirect_urls = [
-  "https://nominations-cleaner-toronto-vsnet.trycloudflare.com/auth/callback",
-  "https://nominations-cleaner-toronto-vsnet.trycloudflare.com/auth/shopify/callback",
-  "https://nominations-cleaner-toronto-vsnet.trycloudflare.com/api/auth/callback"
+  "https://lanes-law-famous-intermediate.trycloudflare.com/auth/callback",
+  "https://lanes-law-famous-intermediate.trycloudflare.com/auth/shopify/callback",
+  "https://lanes-law-famous-intermediate.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]
