@@ -6,7 +6,6 @@ type Review = {
   rating: number
   message: string
   createdAt: string
-  comment: string
   customer: {
     name: string
   }
@@ -36,7 +35,7 @@ export default function ProductReviews() {
           {reviews.map(review => (
             <li key={review.id}>
               <p><strong>{review.customer.name}</strong>: {review.rating}/5</p>
-              <p>{review.comment}</p>
+              <p>{review.message}</p>
               <p>{new Date(review.createdAt).toLocaleDateString()}</p>
             </li>
           ))}
