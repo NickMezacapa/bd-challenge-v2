@@ -8,3 +8,33 @@
   "settings": []
 }
 {% endschema %}
+
+<div class="review-form-container" id="review-form-container">
+  <!-- The review form will be rendered here -->
+</div>
+
+<div class="product-reviews">
+  <h3>Reviews</h3>
+  {% for review in product.reviews %}
+    <div class="review">
+      <p>{{ review.customer.name }}: {{ review.rating }} stars</p>
+      <p>{{ review.message }}</p>
+    </div>
+  {% endfor %}
+</div>
+
+<script src="{{ 'index-CI0jzkjc.js' | asset_url }}"></script>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const productId = {{ product.id | json }}
+
+    const reviewFormContainer = document.getElementById('review-form-container')
+    if (reviewFormContainer) {
+      ReactDOM.render(
+        <ReviewForm productId={productId} />,
+        reviewFormContainer
+      )
+    }
+  })
+</script>

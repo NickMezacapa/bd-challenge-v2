@@ -1,7 +1,7 @@
 # Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
 
 client_id = "8da9f318c9cb7527c40b73b1c09ede3b"
-application_url = "https://lanes-law-famous-intermediate.trycloudflare.com"
+application_url = "https://obligation-fed-survive-quality.trycloudflare.com"
 embedded = true
 name = "bd-challenge"
 handle = "bd-challenge"
@@ -19,9 +19,9 @@ scopes = ""
 
 [auth]
 redirect_urls = [
-  "https://lanes-law-famous-intermediate.trycloudflare.com/auth/callback",
-  "https://lanes-law-famous-intermediate.trycloudflare.com/auth/shopify/callback",
-  "https://lanes-law-famous-intermediate.trycloudflare.com/api/auth/callback"
+  "https://obligation-fed-survive-quality.trycloudflare.com/auth/callback",
+  "https://obligation-fed-survive-quality.trycloudflare.com/auth/shopify/callback",
+  "https://obligation-fed-survive-quality.trycloudflare.com/api/auth/callback"
 ]
 
 [pos]

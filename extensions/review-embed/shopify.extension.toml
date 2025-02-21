@@ -1,3 +1,4 @@
 name = "review-embed"
 type = "theme"
+blocks = ["star_rating.liquid", "display_reviews.liquid", "review-form.liquid"]
 

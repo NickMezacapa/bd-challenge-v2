@@ -1,0 +1,20 @@
+{% schema %}
+{
+  "name": "Product Reviews",
+  "target": "section",
+  "enabled_on": {
+    "templates": ["product"]
+  },
+  "settings": []
+}
+{% endschema %}
+
+<div class="product-reviews">
+  <h3>Reviews</h3>
+  {% for review in product.reviews %}
+    <div class="review">
+      <p>{{ review.customer.name }}: {{ review.rating }} stars</p>
+      <p>{{ review.message }}</p>
+    </div>
+  {% endfor %}
+</div>
